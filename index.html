@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Belon — Shopify Shop Manager & E-Commerce Spezialist</title>
+    <meta name="description" content="Professionelle Shopify-Produktseiten & verlässliches Shop Management für E-Commerce Unternehmen im DACH-Markt.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-white text-zinc-950 antialiased selection:bg-teal-100 selection:text-teal-900">
+
+    <!-- Header Navigation (Airy h-24 = 96px height) -->
+    <header class="sticky top-0 z-40 w-full bg-white/90 backdrop-blur-md border-b border-zinc-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between gap-4">
+            <!-- Branding with Monogram Emblem -->
+            <a href="index.html" class="flex items-center gap-3 sm:gap-3.5 group shrink-0 mr-2 xl:mr-6">
+                <div class="w-10 h-10 rounded-xl bg-zinc-950 text-white font-mono font-bold flex items-center justify-center text-sm shadow-sm group-hover:bg-teal-900 transition-colors">
+                    MB
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-base sm:text-lg tracking-tight text-zinc-950 group-hover:text-teal-950 transition-colors leading-none">MAX BELON</span>
+                    <span class="text-[10px] sm:text-[11px] font-medium text-zinc-500 mt-1 whitespace-nowrap">Shopify Shop Manager & E-Commerce Specialist</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation with Active Badge Pill -->
+            <nav class="hidden xl:flex items-center gap-1">
+                <a href="index.html" class="nav-link active">Start</a>
+                <a href="leistungen.html" class="nav-link">Leistungen</a>
+                <a href="arbeitsweise.html" class="nav-link">Arbeitsweise</a>
+                <a href="projekte.html" class="nav-link">Case Studies</a>
+                <a href="tools.html" class="nav-link">Tools</a>
+                <a href="mein-ansatz.html" class="nav-link">Mein Ansatz</a>
+            </nav>
+
+            <!-- Consistent Upwork CTA Button -->
+            <div class="hidden xl:flex items-center gap-4 shrink-0">
+                <a href="https://www.upwork.com/freelancers/~012da00905f199f0d6?mp_source=share" target="_blank" rel="noopener noreferrer" class="upwork-btn">
+                    <span>Projekt auf Upwork besprechen</span>
+                    <svg class="w-4 h-4 opacity-75" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" class="xl:hidden p-2.5 rounded-xl text-zinc-600 hover:text-zinc-950 hover:bg-zinc-100">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobile-drawer" class="hidden xl:hidden bg-white border-b border-zinc-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="index.html" class="block nav-link active">Start</a>
+            <a href="leistungen.html" class="block nav-link">Leistungen</a>
+            <a href="arbeitsweise.html" class="block nav-link">Arbeitsweise</a>
+            <a href="projekte.html" class="block nav-link">Case Studies</a>
+            <a href="tools.html" class="block nav-link">Tools</a>
+            <a href="mein-ansatz.html" class="block nav-link">Mein Ansatz</a>
+            <div class="pt-2">
+                <a href="https://www.upwork.com/freelancers/~012da00905f199f0d6?mp_source=share" target="_blank" rel="noopener noreferrer" class="upwork-btn w-full text-center justify-center">
+                    Projekt auf Upwork besprechen ↗
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION (Exakt nach Referenzbild) -->
+    <section class="relative pt-12 pb-16 lg:pt-16 lg:pb-24 overflow-hidden bg-gradient-to-b from-zinc-50/80 via-white to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+                
+                <!-- Hero Content Left (45% Ratio = lg:col-span-5) -->
+                <div class="lg:col-span-5 space-y-7 pr-0 lg:pr-4">
+                    
+                    <!-- Status Badge -->
+                    <div class="status-pill-subtle">
+                        <span class="status-dot-subtle"></span>
+                        <span>Verfügbar für Upwork-Projekte</span>
+                    </div>
+
+                    <!-- Main Headline -->
+                    <h1 class="text-2xl sm:text-3xl lg:text-[2.35rem] font-semibold tracking-tight text-zinc-950 leading-[1.18]">
+                        Professionelle Shopify-Produktseiten & verlässliches Shop Management.
+                    </h1>
+
+                    <!-- Description -->
+                    <p class="text-base sm:text-lg text-zinc-600 leading-relaxed font-normal">
+                        Ich unterstütze E-Commerce-Unternehmen dabei, Produkte klar zu präsentieren und den täglichen Shop-Betrieb reibungslos zu führen – von der Produktpflege bis zur visuellen Aufbereitung.
+                    </p>
+
+                    <!-- 3 Kundenvorteile -->
+                    <div class="flex flex-col gap-3 text-sm text-zinc-800 pt-1">
+                        <div class="flex items-start gap-3">
+                            <span class="w-5 h-5 rounded-full bg-teal-100 text-teal-800 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
+                            <div>
+                                <span class="font-bold text-zinc-950">Entlastung im Alltag:</span>
+                                <span class="text-zinc-600"> Produktpflege, Varianten & Shop-Betrieb laufen verlässlich im Hintergrund.</span>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="w-5 h-5 rounded-full bg-teal-100 text-teal-800 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
+                            <div>
+                                <span class="font-bold text-zinc-950">Überzeugende Produktseiten:</span>
+                                <span class="text-zinc-600"> Verständliche Inhalte & Visuals, die Kunden vertrauen lassen.</span>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="w-5 h-5 rounded-full bg-teal-100 text-teal-800 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
+                            <div>
+                                <span class="font-bold text-zinc-950">Proaktives Mitdenken:</span>
+                                <span class="text-zinc-600"> Lösungen statt Rückfragen. Sie sparen Zeit und behalten den Kopf frei.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Call to Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+                        <a href="https://www.upwork.com/freelancers/~012da00905f199f0d6?mp_source=share" target="_blank" rel="noopener noreferrer" class="upwork-btn text-base px-7 py-3.5 shadow-md">
+                            <span>Projekt auf Upwork besprechen</span>
+                            <svg class="w-4 h-4 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                        </a>
+                        <a href="arbeitsweise.html" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl border border-zinc-300 text-zinc-700 font-medium text-sm hover:bg-zinc-50 hover:border-zinc-400 transition-colors">
+                            <span>Arbeitsweise ansehen</span>
+                            <svg class="w-4 h-4 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Visual Right (55% Ratio = lg:col-span-7) -> Live PDP Preview -->
+                <div class="lg:col-span-7">
+                    <div class="relative mx-auto">
+                        <div class="absolute -inset-2 rounded-3xl bg-gradient-to-tr from-teal-500/10 via-zinc-300/30 to-teal-500/10 blur-2xl opacity-70"></div>
+                        
+                        <div class="relative bg-white rounded-2xl border border-zinc-300/90 shop-preview-shadow overflow-hidden text-left">
+                               <!-- Browser Header Mockup -->
+                            <div class="px-3 sm:px-4 py-2.5 sm:py-3 bg-zinc-100/90 border-b border-zinc-200 flex items-center justify-between gap-2 overflow-hidden">
+                                <div class="flex items-center gap-1.5 shrink-0">
+                                    <span class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-rose-400 inline-block"></span>
+                                    <span class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-amber-400 inline-block"></span>
+                                    <span class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-emerald-400 inline-block"></span>
+                                </div>
+                                <div class="px-2.5 sm:px-3.5 py-1 bg-white rounded-md border border-zinc-200 text-[10px] sm:text-xs font-mono text-zinc-600 flex items-center gap-1.5 shadow-inner min-w-0 truncate">
+                                    <svg class="w-3 h-3 text-zinc-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                                    <span class="truncate">brand.de/products/bio-superfood-komplex</span>
+                                </div>
+                                <span class="text-[10px] sm:text-[11px] font-semibold text-teal-800 bg-teal-50 px-2.5 py-1 rounded-full border border-teal-200 shrink-0 whitespace-nowrap hidden sm:inline-block">
+                                    Shopify Product Page
+                                </span>
+                            </div>
+
+                            <!-- Live Product Page Canvas -->
+                            <div class="p-4 sm:p-7 space-y-6">
+                                
+                                <div class="grid grid-cols-1 sm:grid-cols-12 gap-6 items-start">
+                                    
+                                    <!-- Left Product Image -->
+                                    <div class="sm:col-span-5 space-y-3">
+                                        <div class="aspect-square bg-gradient-to-b from-teal-50/80 to-zinc-100/90 rounded-xl border border-zinc-200/90 relative overflow-hidden flex flex-col items-center justify-center p-4 text-center shadow-xs">
+                                            <div class="w-20 h-24 bg-emerald-900 rounded-xl shadow-lg border border-emerald-700 flex flex-col items-center justify-center text-white p-2 relative">
+                                                <span class="text-[9px] font-mono text-emerald-200 tracking-widest uppercase">ORGANIC</span>
+                                                <span class="text-xs font-extrabold mt-1 text-center leading-tight">SUPER FOOD</span>
+                                                <span class="text-[8px] opacity-80 mt-1">Naturkomplex</span>
+                                            </div>
+                                            <span class="text-[10px] font-semibold text-teal-900 bg-white/95 px-2.5 py-0.5 rounded-full border border-teal-200 absolute bottom-2.5 left-2.5 shadow-xs flex items-center gap-1">
+                                                <svg class="w-3 h-3 text-teal-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                                                <span>Studio & Lifestyle Visual</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="grid grid-cols-4 gap-2">
+                                            <div class="aspect-square bg-teal-50 rounded-lg border-2 border-teal-600 flex items-center justify-center text-[9px] font-bold text-teal-900 shadow-xs">Hero</div>
+                                            <div class="aspect-square bg-zinc-100 rounded-lg border border-zinc-200 flex items-center justify-center text-[9px] font-medium text-zinc-600">Studio</div>
+                                            <div class="aspect-square bg-zinc-100 rounded-lg border border-zinc-200 flex items-center justify-center text-[9px] font-medium text-zinc-600">Natur</div>
+                                            <div class="aspect-square bg-zinc-100 rounded-lg border border-zinc-200 flex items-center justify-center text-[9px] font-medium text-zinc-600">Fakten</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Right Buy Box -->
+                                    <div class="sm:col-span-7 space-y-3">
+                                        
+                                        <!-- Rating -->
+                                        <div class="flex items-center gap-1.5">
+                                            <div class="flex text-amber-400 text-xs tracking-wider">★★★★★</div>
+                                            <span class="text-xs font-semibold text-zinc-700">(64)</span>
+                                        </div>
+
+                                        <!-- Title -->
+                                        <div>
+                                            <h2 class="text-xl font-bold text-zinc-900 leading-snug">Bio Superfood Komplex</h2>
+                                            <p class="text-xs text-zinc-500">Klar strukturierte Nährstoff-Informationen</p>
+                                        </div>
+
+                                        <!-- Price Block (Exakt nach Vorlage) -->
+                                        <div class="space-y-1">
+                                            <div class="flex items-center gap-2 flex-wrap">
+                                                <span class="text-xs sm:text-sm text-zinc-400 line-through font-medium">249,99€</span>
+                                                <span class="text-xl sm:text-2xl font-extrabold text-rose-800">189,99€</span>
+                                                <span class="inline-flex items-center gap-1 bg-rose-700 text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow-xs">
+                                                    <svg class="w-2.5 h-2.5 fill-current" viewBox="0 0 24 24"><path d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z"/></svg>
+                                                    <span>SPARE 60,00€</span>
+                                                </span>
+                                            </div>
+                                            <p class="text-[10px] sm:text-[11px] text-zinc-400 font-medium">inkl. MwSt. und KOSTENLOSEM Versand</p>
+                                        </div>
+
+                                        <!-- Kaching Bundle Widget -->
+                                        <div class="p-3 bg-zinc-50 rounded-xl border border-zinc-200 space-y-2">
+                                            <div class="flex flex-wrap items-center justify-between gap-1 text-[11px] font-semibold text-zinc-700">
+                                                <span>Paket wählen (Kaching Bundles):</span>
+                                                <span class="text-teal-800 font-bold bg-teal-100/90 px-2 py-0.5 rounded text-[10px] shrink-0">Bundle-Option</span>
+                                            </div>
+                                            
+                                            <div class="p-2 bg-white rounded-lg border border-zinc-200 flex items-center justify-between text-xs cursor-pointer gap-2">
+                                                <div class="flex items-center gap-2 min-w-0">
+                                                    <span class="w-3.5 h-3.5 rounded-full border border-zinc-400 inline-block shrink-0"></span>
+                                                    <span class="font-medium text-zinc-800 text-[11px] sm:text-xs truncate">1 Dose (30-Tage Vorrat)</span>
+                                                </div>
+                                                <span class="font-bold text-zinc-900 text-[11px] sm:text-xs shrink-0">109,99 €</span>
+                                            </div>
+
+                                            <div class="p-2 bg-teal-50/90 rounded-lg border-2 border-teal-600 flex items-center justify-between text-xs cursor-pointer shadow-xs gap-2">
+                                                <div class="flex items-center gap-2 min-w-0">
+                                                    <span class="w-3.5 h-3.5 rounded-full bg-teal-800 text-white flex items-center justify-center text-[8px] font-bold shrink-0">✓</span>
+                                                    <div class="min-w-0">
+                                                        <span class="font-bold text-teal-950 block text-[11px] sm:text-xs truncate">2 Dosen (Beliebteste Wahl)</span>
+                                                        <span class="text-[9px] sm:text-[10px] text-teal-800 font-medium block">Extra Paket-Rabatt</span>
+                                                    </div>
+                                                </div>
+                                                <span class="font-extrabold text-teal-950 text-[11px] sm:text-xs shrink-0">189,99 €</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- CTA Button -->
+                                        <button class="w-full py-3 bg-zinc-900 hover:bg-zinc-800 text-white rounded-lg font-semibold text-xs flex items-center justify-center gap-2 shadow-sm">
+                                            <span>In den Warenkorb legen</span>
+                                        </button>
+
+                                        <!-- Trust Badges -->
+                                        <div class="grid grid-cols-3 gap-1 sm:gap-1.5 pt-1 text-center">
+                                            <div class="p-1.5 bg-zinc-50 rounded border border-zinc-200 text-[9px] sm:text-[10px] font-medium text-zinc-700 truncate">🔒 Shopify Verified</div>
+                                            <div class="p-1.5 bg-zinc-50 rounded border border-zinc-200 text-[9px] sm:text-[10px] font-medium text-zinc-700 truncate">📊 Vergleichstabelle</div>
+                                            <div class="p-1.5 bg-zinc-50 rounded border border-zinc-200 text-[9px] sm:text-[10px] font-medium text-zinc-700 truncate">💬 FAQ Section</div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- Comparison & FAQ Blocks -->
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-zinc-200">
+                                    <div class="p-3.5 bg-zinc-50 rounded-xl border border-zinc-200 space-y-2 text-xs">
+                                        <div class="font-semibold text-zinc-900 flex flex-wrap items-center justify-between text-[11px] gap-1">
+                                            <span>Vergleichstabelle</span>
+                                            <span class="text-teal-800 font-bold shrink-0">Unser Produkt vs. Andere</span>
+                                        </div>
+                                        <div class="space-y-1 text-[10px]">
+                                            <div class="flex justify-between p-1 bg-white rounded border border-zinc-200/60">
+                                                <span class="text-zinc-600">Verständliche Inhaltsstoffe</span>
+                                                <span class="font-bold text-teal-800">✓ Ja</span>
+                                            </div>
+                                            <div class="flex justify-between p-1 bg-white rounded border border-zinc-200/60">
+                                                <span class="text-zinc-600">Reine Bio-Qualität</span>
+                                                <span class="font-bold text-teal-800">✓ Ja</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="p-3.5 bg-zinc-50 rounded-xl border border-zinc-200 space-y-2 text-xs">
+                                        <div class="font-semibold text-zinc-900 flex flex-wrap items-center justify-between text-[11px] gap-1">
+                                            <span>FAQs & Einwandbehandlung</span>
+                                            <span class="text-zinc-400 font-mono text-[10px] shrink-0">Claude & ChatGPT</span>
+                                        </div>
+                                        <div class="p-1.5 bg-white rounded border border-zinc-200 text-[10px] flex justify-between items-center text-zinc-700">
+                                            <span>Wie wird das Produkt eingenommen?</span>
+                                            <span class="text-zinc-400 font-bold">+</span>
+                                        </div>
+                                        <div class="p-1.5 bg-white rounded border border-zinc-200 text-[10px] flex justify-between items-center text-zinc-700">
+                                            <span>Wann spüre ich erste Ergebnisse?</span>
+                                            <span class="text-zinc-400 font-bold">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Mobile Footer Overlay -->
+                            <div class="bg-zinc-900 text-zinc-300 text-xs px-4 py-2 flex items-center justify-between font-mono border-t border-zinc-800">
+                                <span>100% Responsive Layout: Mobile & Desktop</span>
+                                <span class="text-emerald-400 font-semibold">Ready for Live Launch ✓</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROOF METRICS BAR -->
+    <section class="py-14 bg-white border-y border-zinc-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left divide-y md:divide-y-0 md:divide-x divide-zinc-200">
+                <div class="pt-4 md:pt-0 md:pr-8 space-y-2 group">
+                    <span class="text-xl sm:text-2xl lg:text-[1.65rem] font-extrabold text-zinc-950 font-mono tracking-tight block leading-snug group-hover:text-teal-800 transition-colors">
+                        30+ Std./Woche
+                    </span>
+                    <h3 class="text-base font-bold text-zinc-900">Tägliches Shopify Shop Management</h3>
+                    <p class="text-xs text-zinc-500 leading-relaxed">Aktive Praxiserfahrung im Katalog-, Varianten-, Metafield- & Theme-Management.</p>
+                </div>
+
+                <div class="pt-6 md:pt-0 md:px-8 space-y-2 group">
+                    <span class="text-xl sm:text-2xl lg:text-[1.65rem] font-extrabold text-zinc-950 font-mono tracking-tight block leading-snug group-hover:text-teal-800 transition-colors">
+                        Von Recherche bis Live-Shop
+                    </span>
+                    <h3 class="text-base font-bold text-zinc-900">Full Product Page Workflow</h3>
+                    <p class="text-xs text-zinc-500 leading-relaxed">Ganzheitliche Umsetzung inklusive KI-Visuals (NanoBanana Pro), SEO & Sections.</p>
+                </div>
+
+                <div class="pt-6 md:pt-0 md:pl-8 space-y-2 group">
+                    <span class="text-xl sm:text-2xl lg:text-[1.65rem] font-extrabold text-zinc-950 font-mono tracking-tight block leading-snug group-hover:text-teal-800 transition-colors">
+                        DACH E-Commerce
+                    </span>
+                    <h3 class="text-base font-bold text-zinc-900">Deutsche Qualitätsstandards</h3>
+                    <p class="text-xs text-zinc-500 leading-relaxed">Fokus auf deutsche Marken, verlässliche Deadlines, Datenschutz & klare Kommunikation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: WAS KUNDEN SCHÄTZEN -->
+    <section class="py-20 bg-zinc-50 border-b border-zinc-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+                <span class="text-xs font-mono uppercase tracking-widest text-teal-800 font-semibold bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
+                    Zusammenarbeit & Qualität
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-semibold text-zinc-900 tracking-tight">
+                    Was Kunden an der Zusammenarbeit schätzen
+                </h2>
+                <p class="text-zinc-600 text-base sm:text-lg">
+                    Keine anonyme Freelancer-Abwicklung, sondern verlässliche Partnerschaft mit klaren Strukturen, proaktivem Mitdenken und hohem Qualitätsanspruch.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="premium-card p-6 flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-teal-50 border border-teal-200/80 flex items-center justify-center text-teal-800">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-zinc-900">Proaktives Mitdenken</h3>
+                        <p class="text-zinc-600 text-xs sm:text-sm leading-relaxed">
+                            Ich warte nicht nur auf Anweisungen, sondern erkenne eigenständig Lücken im Produktauftritt, fehlerhafte Metafields oder unklare Kundeninformationen im Shop.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-zinc-200/60 flex items-center justify-between text-xs font-medium text-zinc-500">
+                        <span>Initiative</span>
+                        <span class="text-teal-800 font-semibold">Eigenständig</span>
+                    </div>
+                </div>
+
+                <div class="premium-card p-6 flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-teal-50 border border-teal-200/80 flex items-center justify-center text-teal-800">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-zinc-900">Termintreue & Verlässlichkeit</h3>
+                        <p class="text-zinc-600 text-xs sm:text-sm leading-relaxed">
+                            Pünktliche Abgabe zugesagter Milestones ist für mich selbstverständlich. Vereinbarte Deadlines für Produkt-Launches werden ohne Ausreden eingehalten.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-zinc-200/60 flex items-center justify-between text-xs font-medium text-zinc-500">
+                        <span>Zuverlässigkeit</span>
+                        <span class="text-teal-800 font-semibold">Planbar</span>
+                    </div>
+                </div>
+
+                <div class="premium-card p-6 flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-teal-50 border border-teal-200/80 flex items-center justify-center text-teal-800">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-zinc-900">Strukturierte Arbeitsweise</h3>
+                        <p class="text-zinc-600 text-xs sm:text-sm leading-relaxed">
+                            Saubere Produktpflege in Shopify, verständliche Notizen in Notion oder Sheets und klare Aufbereitung aller Varianten, Tags und Collections.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-zinc-200/60 flex items-center justify-between text-xs font-medium text-zinc-500">
+                        <span>Ordnung</span>
+                        <span class="text-teal-800 font-semibold">Skalierbar</span>
+                    </div>
+                </div>
+
+                <div class="premium-card p-6 flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-teal-50 border border-teal-200/80 flex items-center justify-center text-teal-800">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-zinc-900">Liebe zum Detail im Design</h3>
+                        <p class="text-zinc-600 text-xs sm:text-sm leading-relaxed">
+                            Von feinen Bild-Schatten bis zu einheitlicher Typografie: Jede Produktseite wird optisch so aufbereitet, dass sie zum Premium-Image der Marke passt.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-zinc-200/60 flex items-center justify-between text-xs font-medium text-zinc-500">
+                        <span>Qualität</span>
+                        <span class="text-teal-800 font-semibold">Ästhetisch</span>
+                    </div>
+                </div>
+
+                <div class="premium-card p-6 flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-teal-50 border border-teal-200/80 flex items-center justify-center text-teal-800">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-zinc-900">Präzise KI-Unterstützung</h3>
+                        <p class="text-zinc-600 text-xs sm:text-sm leading-relaxed">
+                            KI (Claude, ChatGPT, NanoBanana Pro) dient als Werkzeug für Tempo und Tiefenschärfe. Der finale Schliff ist immer menschlich und qualitätsgeprüft.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-zinc-200/60 flex items-center justify-between text-xs font-medium text-zinc-500">
+                        <span>Tempo</span>
+                        <span class="text-teal-800 font-semibold">Effizient</span>
+                    </div>
+                </div>
+
+                <div class="premium-card p-6 flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-teal-50 border border-teal-200/80 flex items-center justify-center text-teal-800">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-zinc-900">Transparente Kommunikation</h3>
+                        <p class="text-zinc-600 text-xs sm:text-sm leading-relaxed">
+                            Klare Updates zum Bearbeitungsstand via Slack, Notion oder Upwork-Nachrichten – ohne lange Funkstille oder unnötige Bürokratie.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-zinc-200/60 flex items-center justify-between text-xs font-medium text-zinc-500">
+                        <span>Kurze Wege</span>
+                        <span class="text-teal-800 font-semibold">Direkt</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORKFLOW PREVIEW SECTION -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-14 gap-6">
+                <div>
+                    <span class="text-xs font-mono uppercase tracking-widest text-teal-800 font-semibold bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
+                        Arbeitsweise & Pipeline
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-zinc-900 tracking-tight mt-3">
+                        Vom Datenpunkt zur fertigen Shopify-Produktseite
+                    </h2>
+                </div>
+                <a href="arbeitsweise.html" class="inline-flex items-center gap-2 text-teal-800 font-semibold text-sm hover:text-teal-900 transition-colors">
+                    <span>Vollständigen 9-Stufen Workflow ansehen</span>
+                    <span>→</span>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-9 gap-3.5 relative">
+                <div class="workflow-step-card p-4 text-center flex flex-col items-center justify-center space-y-2">
+                    <span class="text-[10px] font-mono text-zinc-400">01</span>
+                    <div class="w-9 h-9 rounded-xl bg-zinc-100 flex items-center justify-center text-zinc-700 step-icon shadow-xs">
+                        <svg class="w-4.5 h-4.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                    </div>
+                    <span class="text-xs font-semibold text-zinc-900">Recherche</span>
+                </div>
+
+                <div class="workflow-step-card p-4 text-center flex flex-col items-center justify-center space-y-2">
+                    <span class="text-[10px] font-mono text-zinc-400">02</span>
+                    <div class="w-9 h-9 rounded-xl bg-zinc-100 flex items-center justify-center text-zinc-700 step-icon shadow-xs">
+                        <svg class="w-4.5 h-4.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                    </div>
+                    <span class="text-xs font-semibold text-zinc-900">Trends</span>
+                </div>
+
+                <div class="workflow-step-card p-4 text-center flex flex-col items-center justify-center space-y-2">
+                    <span class="text-[10px] font-mono text-zinc-400">03</span>
+                    <div class="w-9 h-9 rounded-xl bg-zinc-100 flex items-center justify-center text-zinc-700 step-icon shadow-xs">
+                        <svg class="w-4.5 h-4.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 11h5m-5 4h5m4-8h5m-5 4h5m-5 4h5M3 3h18v18H3V3z"/></svg>
+                    </div>
+                    <span class="text-xs font-semibold text-zinc-900">Keywords</span>
+                </div>
+
+                <div class="workflow-step-card p-4 text-center flex flex-col items-center justify-center space-y-2">
+                    <span class="text-[10px] font-mono text-zinc-400">04</span>
+                    <div class="w-9 h-9 rounded-xl bg-zinc-100 flex items-center justify-center text-zinc-700 step-icon shadow-xs">
+                        <svg class="w-4.5 h-4.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                    </div>
+                    <span class="text-xs font-semibold text-zinc-900">Claude</span>
+                </div>
+
+                <div class="workflow-step-card p-4 text-center flex flex-col items-center justify-center space-y-2">
+                    <span class="text-[10px] font-mono text-zinc-400">05</span>
+                    <div class="w-9 h-9 rounded-xl bg-zinc-100 flex items-center justify-center text-zinc-700 step-icon shadow-xs">
+                        <svg class="w-4.5 h-4.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+                    </div>
+                    <span class="text-xs font-semibold text-zinc-900">ChatGPT</span>
+                </div>
+
+                <div class="workflow-step-card p-4 text-center flex flex-col items-center justify-center space-y-2">
+                    <span class="text-[10px] font-mono text-zinc-400">06</span>
+                    <div class="w-9 h-9 rounded-xl bg-zinc-100 flex items-center justify-center text-zinc-700 step-icon shadow-xs">
+                        <svg class="w-4.5 h-4.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                    </div>
+                    <span class="text-xs font-semibold text-zinc-900">NanoBanana</span>
+                </div>
+
+                <div class="workflow-step-card p-4 text-center flex flex-col items-center justify-center space-y-2">
+                    <span class="text-[10px] font-mono text-zinc-400">07</span>
+                    <div class="w-9 h-9 rounded-xl bg-zinc-100 flex items-center justify-center text-zinc-700 step-icon shadow-xs">
+                        <svg class="w-4.5 h-4.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
+                    </div>
+                    <span class="text-xs font-semibold text-zinc-900">Canva AI</span>
+                </div>
+
+                <div class="workflow-step-card p-4 text-center flex flex-col items-center justify-center space-y-2">
+                    <span class="text-[10px] font-mono text-zinc-400">08</span>
+                    <div class="w-9 h-9 rounded-xl bg-zinc-100 flex items-center justify-center text-zinc-700 step-icon shadow-xs">
+                        <svg class="w-4.5 h-4.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+                    </div>
+                    <span class="text-xs font-semibold text-zinc-900">Shopify</span>
+                </div>
+
+                <div class="workflow-step-card p-4 text-center flex flex-col items-center justify-center space-y-2 border-teal-500 bg-teal-50/70 shadow-sm">
+                    <span class="text-[10px] font-mono text-teal-800 font-bold">09</span>
+                    <div class="w-9 h-9 rounded-xl bg-teal-800 flex items-center justify-center text-white step-icon shadow-xs">
+                        <svg class="w-4.5 h-4.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    </div>
+                    <span class="text-xs font-bold text-teal-950">Live PDP</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED PROJECTS PREVIEW -->
+    <section class="py-24 bg-zinc-50 border-t border-zinc-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-14 gap-6">
+                <div>
+                    <span class="text-xs font-mono uppercase tracking-widest text-teal-800 font-semibold bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
+                        Arbeitsbeispiele & Case Studies
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-zinc-900 tracking-tight mt-3">
+                        Ausgewählte Arbeitsergebnisse
+                    </h2>
+                </div>
+                <a href="projekte.html" class="inline-flex items-center gap-2 text-teal-800 font-semibold text-sm hover:text-teal-900 transition-colors">
+                    <span>Alle Projekte durchsuchen</span>
+                    <span>→</span>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="case-study-card flex flex-col justify-between">
+                    <div class="h-56 bg-gradient-to-tr from-teal-950 via-emerald-900 to-zinc-950 p-6 flex flex-col justify-between text-white relative overflow-hidden card-banner-bg">
+                        <div class="flex items-center justify-between text-xs z-10">
+                            <span class="px-2.5 py-1 bg-white/20 backdrop-blur-md rounded-md font-semibold text-white">PDP Redesign</span>
+                            <span class="font-mono text-emerald-200 text-[11px]">Shopify Live</span>
+                        </div>
+                        <div class="z-10">
+                            <span class="text-xs text-emerald-300 font-mono uppercase tracking-wider">Nahrungsergänzung</span>
+                            <h4 class="text-lg font-bold text-white mt-0.5">Bio Superfood Komplex</h4>
+                        </div>
+                        <div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-emerald-500/20 blur-xl"></div>
+                    </div>
+
+                    <div class="p-6 sm:p-7 space-y-4 flex-1 flex flex-col justify-between">
+                        <div class="space-y-3">
+                            <h3 class="text-xl font-bold text-zinc-900 leading-snug tracking-tight">
+                                Entwicklung einer Conversion-optimierten Shopify Produktseite
+                            </h3>
+                            <p class="text-zinc-600 text-xs sm:text-sm leading-relaxed">
+                                Neukonzeption aller Theme-Sections, Erstellung von 6 KI-Lifestyle-Visuals (NanoBanana Pro) und Kaching Bundles Integration.
+                            </p>
+                        </div>
+                        
+                        <div class="pt-4 border-t border-zinc-200/80 flex items-center justify-between">
+                            <span class="text-xs font-mono text-zinc-400">Upwork Case Study</span>
+                            <a href="projekte.html" class="text-xs font-bold text-zinc-900 hover:text-teal-800 transition-colors flex items-center gap-1">
+                                <span>Details ansehen</span>
+                                <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="case-study-card flex flex-col justify-between">
+                    <div class="h-56 bg-gradient-to-tr from-zinc-950 via-zinc-900 to-zinc-800 p-6 flex flex-col justify-between text-white relative overflow-hidden card-banner-bg">
+                        <div class="flex items-center justify-between text-xs z-10">
+                            <span class="px-2.5 py-1 bg-white/20 backdrop-blur-md rounded-md font-semibold text-white">Shop Management</span>
+                            <span class="font-mono text-zinc-300 text-[11px]">Katalog & Varianten</span>
+                        </div>
+                        <div class="z-10">
+                            <span class="text-xs text-zinc-300 font-mono uppercase tracking-wider">Shopify Admin</span>
+                            <h4 class="text-lg font-bold text-white mt-0.5">Katalog & Smart Collections</h4>
+                        </div>
+                        <div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-zinc-700/20 blur-xl"></div>
+                    </div>
+
+                    <div class="p-6 sm:p-7 space-y-4 flex-1 flex flex-col justify-between">
+                        <div class="space-y-3">
+                            <h3 class="text-xl font-bold text-zinc-900 leading-snug tracking-tight">
+                                Strukturierte Katalogpflege & Varianten-Organisation im Shopify Backend
+                            </h3>
+                            <p class="text-zinc-600 text-xs sm:text-sm leading-relaxed">
+                                Pflege umfangreicher Variantenstrukturen, Automatisierung von Smart Collections und Aufbau eines sauberen Notion-Workflows.
+                            </p>
+                        </div>
+                        
+                        <div class="pt-4 border-t border-zinc-200/80 flex items-center justify-between">
+                            <span class="text-xs font-mono text-zinc-400">Upwork Case Study</span>
+                            <a href="projekte.html" class="text-xs font-bold text-zinc-900 hover:text-teal-800 transition-colors flex items-center gap-1">
+                                <span>Details ansehen</span>
+                                <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="case-study-card flex flex-col justify-between">
+                    <div class="h-56 bg-gradient-to-tr from-teal-950 via-teal-900 to-emerald-950 p-6 flex flex-col justify-between text-white relative overflow-hidden card-banner-bg">
+                        <div class="flex items-center justify-between text-xs z-10">
+                            <span class="px-2.5 py-1 bg-white/20 backdrop-blur-md rounded-md font-semibold text-white">KI-Bilder</span>
+                            <span class="font-mono text-emerald-200 text-[11px]">NanoBanana Pro</span>
+                        </div>
+                        <div class="z-10">
+                            <span class="text-xs text-emerald-300 font-mono uppercase tracking-wider">Lifestyle & E-Commerce</span>
+                            <h4 class="text-lg font-bold text-white mt-0.5">Studio & Anwendungs-Bilder</h4>
+                        </div>
+                        <div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-emerald-400/20 blur-xl"></div>
+                    </div>
+
+                    <div class="p-6 sm:p-7 space-y-4 flex-1 flex flex-col justify-between">
+                        <div class="space-y-3">
+                            <h3 class="text-xl font-bold text-zinc-900 leading-snug tracking-tight">
+                                KI-gestützte Produktvisuals für moderne Shopify Produktseiten
+                            </h3>
+                            <p class="text-zinc-600 text-xs sm:text-sm leading-relaxed">
+                                Erstellung von 12 Studio-Visuals und Lifestyle-Szenen ohne aufwendiges Studio-Fotoshooting innerhalb von 48 Stunden.
+                            </p>
+                        </div>
+                        
+                        <div class="pt-4 border-t border-zinc-200/80 flex items-center justify-between">
+                            <span class="text-xs font-mono text-zinc-400">Upwork Case Study</span>
+                            <a href="projekte.html" class="text-xs font-bold text-zinc-900 hover:text-teal-800 transition-colors flex items-center gap-1">
+                                <span>Details ansehen</span>
+                                <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION & UPWORK COMPLIANCE SECTION -->
+    <section id="upwork-kontakt" class="py-24 bg-zinc-900 text-white relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+            <span class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-medium bg-zinc-800 text-zinc-300 border border-zinc-700">
+                <span>Auf Upwork verfügbar</span>
+            </span>
+
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight leading-tight">
+                Lassen Sie uns Ihr nächstes Shopify-Projekt auf Upwork besprechen.
+            </h2>
+
+            <p class="text-zinc-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+                Ich stehe für unverbindliche Erstgespräche, projektbasierte Produktseiten-Entwicklungen sowie für fortlaufendes Shopify Shop Management zur Verfügung.
+            </p>
+
+            <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://www.upwork.com/freelancers/~012da00905f199f0d6?mp_source=share" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-white text-zinc-900 hover:bg-zinc-100 px-9 py-4 rounded-xl font-semibold text-base transition-colors shadow-lg">
+                    <span>Projekt auf Upwork besprechen ↗</span>
+                </a>
+            </div>
+
+            <p class="text-xs text-zinc-500 pt-4">
+                🔒 Diese Website entspricht den Richtlinien von Upwork. Alle Anfragen und Verträge werden exklusiv über die Upwork-Plattform abgewickelt.
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-zinc-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-zinc-900 text-white font-mono font-bold flex items-center justify-center text-xs">
+                    MB
+                </div>
+                <div class="space-y-0.5">
+                    <span class="font-bold text-zinc-900 text-base tracking-tight">MAX BELON</span>
+                    <span class="block text-xs text-zinc-500">Shopify Shop Manager & E-Commerce Specialist</span>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-6 text-sm text-zinc-600">
+                <a href="index.html" class="hover:text-zinc-900 font-semibold text-zinc-900">Start</a>
+                <a href="leistungen.html" class="hover:text-zinc-900">Leistungen</a>
+                <a href="arbeitsweise.html" class="hover:text-zinc-900">Arbeitsweise</a>
+                <a href="projekte.html" class="hover:text-zinc-900">Case Studies</a>
+                <a href="tools.html" class="hover:text-zinc-900">Tools</a>
+                <a href="mein-ansatz.html" class="hover:text-zinc-900">Mein Ansatz</a>
+            </div>
+
+            <div class="text-xs text-zinc-400 text-center md:text-right">
+                © 2026 Max Belon. Alle Rechte vorbehalten.<br>
+                <span>Vertraulichkeit & Datenschutz gewahrt.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript Engine -->
+    <script src="js/main.js"></script>
+</body>
+</html>

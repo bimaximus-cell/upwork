@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools & Workflow — Max Belon | Shopify Shop Manager</title>
+    <meta name="description" content="Der praxiserprobte Workflow für Shopify-Produktseiten: Von Claude (Copywriting) und ChatGPT (Struktur) über NanoBanana Pro (KI-Visuals) bis zur fertigen Shopify-Umsetzung.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-white text-zinc-950 antialiased selection:bg-teal-100 selection:text-teal-900">
+
+    <!-- Header Navigation (Airy h-24 = 96px height) -->
+    <header class="sticky top-0 z-40 w-full bg-white/90 backdrop-blur-md border-b border-zinc-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between gap-4">
+            <!-- Branding with Monogram Emblem -->
+            <a href="index.html" class="flex items-center gap-3 sm:gap-3.5 group shrink-0 mr-2 xl:mr-6">
+                <div class="w-10 h-10 rounded-xl bg-zinc-950 text-white font-mono font-bold flex items-center justify-center text-sm shadow-sm group-hover:bg-teal-900 transition-colors">
+                    MB
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-base sm:text-lg tracking-tight text-zinc-950 group-hover:text-teal-950 transition-colors leading-none">MAX BELON</span>
+                    <span class="text-[10px] sm:text-[11px] font-medium text-zinc-500 mt-1 whitespace-nowrap">Shopify Shop Manager & E-Commerce Specialist</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation with Active Badge Pill -->
+            <nav class="hidden xl:flex items-center gap-1">
+                <a href="index.html" class="nav-link">Start</a>
+                <a href="leistungen.html" class="nav-link">Leistungen</a>
+                <a href="arbeitsweise.html" class="nav-link">Arbeitsweise</a>
+                <a href="projekte.html" class="nav-link">Case Studies</a>
+                <a href="tools.html" class="nav-link active">Tools</a>
+                <a href="mein-ansatz.html" class="nav-link">Mein Ansatz</a>
+            </nav>
+
+            <!-- Consistent Upwork CTA Button -->
+            <div class="hidden xl:flex items-center gap-4 shrink-0">
+                <a href="https://www.upwork.com/freelancers/~012da00905f199f0d6?mp_source=share" target="_blank" rel="noopener noreferrer" class="upwork-btn">
+                    <span>Projekt auf Upwork besprechen</span>
+                    <svg class="w-4 h-4 opacity-75" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" class="xl:hidden p-2.5 rounded-xl text-zinc-600 hover:text-zinc-950 hover:bg-zinc-100">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+
+        <div id="mobile-drawer" class="hidden xl:hidden bg-white border-b border-zinc-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="index.html" class="block nav-link">Start</a>
+            <a href="leistungen.html" class="block nav-link">Leistungen</a>
+            <a href="arbeitsweise.html" class="block nav-link">Arbeitsweise</a>
+            <a href="projekte.html" class="block nav-link">Case Studies</a>
+            <a href="tools.html" class="block nav-link active">Tools</a>
+            <a href="mein-ansatz.html" class="block nav-link">Mein Ansatz</a>
+            <div class="pt-2">
+                <a href="https://www.upwork.com/freelancers/~012da00905f199f0d6?mp_source=share" target="_blank" rel="noopener noreferrer" class="upwork-btn w-full text-center justify-center">
+                    Projekt auf Upwork besprechen ↗
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- PAGE HERO (Punkt 1: Ergänzter Klarstellungssatz) -->
+    <section class="pt-12 pb-10 lg:pt-16 lg:pb-12 bg-gradient-to-b from-zinc-50/80 via-white to-white border-b border-zinc-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl space-y-4">
+            <span class="text-xs font-mono uppercase tracking-widest text-teal-800 font-semibold bg-teal-50 px-3.5 py-1 rounded-full border border-teal-200">
+                E-Commerce System & Workflow
+            </span>
+            <h1 class="text-3xl sm:text-4xl lg:text-[2.65rem] font-semibold text-zinc-950 tracking-tight leading-[1.18]">
+                So entstehen professionelle Shopify Produktseiten
+            </h1>
+            <p class="text-zinc-600 text-base sm:text-lg leading-relaxed font-normal">
+                Nicht die Ansammlung isolierter Tools entscheidet über den Erfolg, sondern das nahtlose Zusammenspiel von KI-Technologie, visueller Aufbereitung & verlässlicher Shopify-Umsetzung.
+            </p>
+            <p class="text-xs sm:text-sm text-teal-900 font-semibold bg-teal-50/80 px-4 py-2 rounded-xl border border-teal-200/80 inline-block">
+                Jedes Tool übernimmt eine klar definierte Aufgabe. Erst das Zusammenspiel aus Recherche, KI und Shopify sorgt für hochwertige Produktseiten.
+            </p>
+        </div>
+    </section>
+
+    <!-- ABSCHNITT 1: MEIN WORKFLOW (Punkt 2: Dezente Verbindungselemente / Pfeile zwischen den Karten) -->
+    <section class="py-16 lg:py-20 bg-white border-b border-zinc-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            <div class="text-center max-w-3xl mx-auto space-y-3">
+                <span class="text-xs font-mono uppercase tracking-widest text-teal-800 font-semibold bg-teal-50 px-3.5 py-1 rounded-full border border-teal-200">
+                    Schritt-für-Schritt Pipeline
+                </span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-zinc-950 tracking-tight">
+                    Der zusammenhängende Tool-Workflow
+                </h2>
+                <p class="text-zinc-600 text-sm sm:text-base">
+                    Jedes Werkzeug hat seinen festen Platz im Erstellungsprozess – ohne Redundanzen oder Zufall.
+                </p>
+            </div>
+
+            <!-- Workflow Visual Pipeline Grid mit Verbindungspfeilen -->
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4 relative">
+                
+                <!-- Step 1 -->
+                <div class="p-5 bg-zinc-50 rounded-2xl border border-zinc-200 text-center space-y-3 flex flex-col justify-between hover:border-teal-500 transition-all relative group shadow-xs">
+                    <div class="space-y-2">
+                        <span class="text-[10px] font-mono font-bold text-zinc-400 block">01. START</span>
+                        <div class="w-10 h-10 rounded-xl bg-white border border-zinc-200 mx-auto flex items-center justify-center text-teal-800 shadow-xs">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                        </div>
+                        <h3 class="text-sm font-bold text-zinc-950">Produktidee</h3>
+                        <p class="text-[11px] text-zinc-500 leading-snug">Ausgangsmaterial & Fokus</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-center gap-1 text-teal-800 font-bold text-xs">
+                        <span>Schritt 1</span>
+                        <span class="hidden lg:inline text-zinc-400 font-normal ml-1">→</span>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="p-5 bg-zinc-50 rounded-2xl border border-zinc-200 text-center space-y-3 flex flex-col justify-between hover:border-teal-500 transition-all relative group shadow-xs">
+                    <div class="space-y-2">
+                        <span class="text-[10px] font-mono font-bold text-teal-800 block">02. TEXT</span>
+                        <div class="w-10 h-10 rounded-xl bg-teal-100 text-teal-900 mx-auto flex items-center justify-center shadow-xs">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+                        </div>
+                        <h3 class="text-sm font-bold text-zinc-950">Claude</h3>
+                        <p class="text-[11px] text-zinc-500 leading-snug">Natürliche Vorteilstexte</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-center gap-1 text-teal-800 font-bold text-xs">
+                        <span>Schritt 2</span>
+                        <span class="hidden lg:inline text-zinc-400 font-normal ml-1">→</span>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="p-5 bg-zinc-50 rounded-2xl border border-zinc-200 text-center space-y-3 flex flex-col justify-between hover:border-teal-500 transition-all relative group shadow-xs">
+                    <div class="space-y-2">
+                        <span class="text-[10px] font-mono font-bold text-teal-800 block">03. STRUKTUR</span>
+                        <div class="w-10 h-10 rounded-xl bg-teal-100 text-teal-900 mx-auto flex items-center justify-center shadow-xs">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+                        </div>
+                        <h3 class="text-sm font-bold text-zinc-950">ChatGPT</h3>
+                        <p class="text-[11px] text-zinc-500 leading-snug">FAQs & Vergleichstabellen</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-center gap-1 text-teal-800 font-bold text-xs">
+                        <span>Schritt 3</span>
+                        <span class="hidden lg:inline text-zinc-400 font-normal ml-1">→</span>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="p-5 bg-zinc-50 rounded-2xl border border-zinc-200 text-center space-y-3 flex flex-col justify-between hover:border-teal-500 transition-all relative group shadow-xs">
+                    <div class="space-y-2">
+                        <span class="text-[10px] font-mono font-bold text-teal-800 block">04. BILDER</span>
+                        <div class="w-10 h-10 rounded-xl bg-teal-100 text-teal-900 mx-auto flex items-center justify-center shadow-xs">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                        </div>
+                        <h3 class="text-sm font-bold text-zinc-950">NanoBanana</h3>
+                        <p class="text-[11px] text-zinc-500 leading-snug">KI-Studio & Lifestyle Visuals</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-center gap-1 text-teal-800 font-bold text-xs">
+                        <span>Schritt 4</span>
+                        <span class="hidden lg:inline text-zinc-400 font-normal ml-1">→</span>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="p-5 bg-zinc-50 rounded-2xl border border-zinc-200 text-center space-y-3 flex flex-col justify-between hover:border-teal-500 transition-all relative group shadow-xs">
+                    <div class="space-y-2">
+                        <span class="text-[10px] font-mono font-bold text-teal-800 block">05. FINISHING</span>
+                        <div class="w-10 h-10 rounded-xl bg-teal-100 text-teal-900 mx-auto flex items-center justify-center shadow-xs">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/></svg>
+                        </div>
+                        <h3 class="text-sm font-bold text-zinc-950">Canva AI</h3>
+                        <p class="text-[11px] text-zinc-500 leading-snug">Badges & Vorteilssiegel</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-center gap-1 text-teal-800 font-bold text-xs">
+                        <span>Schritt 5</span>
+                        <span class="hidden lg:inline text-zinc-400 font-normal ml-1">→</span>
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="p-5 bg-teal-50/90 rounded-2xl border-2 border-teal-600 text-center space-y-3 flex flex-col justify-between shadow-xs">
+                    <div class="space-y-2">
+                        <span class="text-[10px] font-mono font-bold text-teal-900 block">06. GO-LIVE</span>
+                        <div class="w-10 h-10 rounded-xl bg-teal-800 text-white mx-auto flex items-center justify-center shadow-xs">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+                        </div>
+                        <h3 class="text-sm font-bold text-zinc-950">Shopify PDP</h3>
+                        <p class="text-[11px] text-teal-900 font-medium leading-snug">Sections & Live Checkout</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-center gap-1 text-teal-800 font-bold text-xs">
+                        <span>Live PDP ✓</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABSCHNITT 2: SHOPIFY CORE (Punkt 4: Screenshots & UI-Vorschau vom Shopify Backend) -->
+    <section class="py-20 bg-zinc-50 border-b border-zinc-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-zinc-200 pb-4">
+                <div>
+                    <span class="text-xs font-mono uppercase tracking-widest text-teal-800 font-semibold bg-teal-50 px-3.5 py-1 rounded-full border border-teal-200">
+                        Shopify Spezialisierung
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-zinc-950 tracking-tight mt-2">
+                        Shopify Backend & Theme-Umsetzung
+                    </h2>
+                </div>
+                <span class="text-xs font-mono text-zinc-400">Tägliche Praxis im Shop Manager Alltag</span>
+            </div>
+
+            <!-- 2 Große, hochwertige Karten mit Mini-Backend UI Mockups -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Card 1: Backend & Katalogpflege -->
+                <div class="premium-card p-6 sm:p-8 space-y-6 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 items-start">
+                            <span class="text-xs font-mono font-bold uppercase tracking-wider text-teal-800 bg-teal-50 px-3 py-1 rounded-md border border-teal-200">Shop Management</span>
+                            <span class="text-xs text-zinc-400 font-mono">Shopify Admin Backend</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-zinc-950">Strukturierte Katalog- & Variantenpflege</h3>
+                        <p class="text-zinc-600 text-xs sm:text-sm leading-relaxed">
+                            Saubere Pflege von Produktattributen, Metafields und Smart Collections im Backend für reibungslose Shop-Abläufe.
+                        </p>
+
+                        <!-- Realistic Shopify Backend UI Mockup Box -->
+                        <div class="p-4 bg-zinc-900 text-white rounded-xl border border-zinc-800 space-y-2.5 shadow-md">
+                            <div class="flex items-center justify-between text-[11px] font-mono text-zinc-400 border-b border-zinc-800 pb-2">
+                                <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-400"></span> Shopify Admin / Products</span>
+                                <span class="text-emerald-400 font-semibold">Active ✓</span>
+                            </div>
+                            <div class="grid grid-cols-2 gap-2 text-[10px] font-mono text-zinc-300 pt-1">
+                                <div class="p-2 bg-zinc-800/80 rounded border border-zinc-700">
+                                    <span class="text-zinc-500 block">Smart Collections</span>
+                                    <span class="font-bold text-white">Automatisierte Tags</span>
+                                </div>
+                                <div class="p-2 bg-zinc-800/80 rounded border border-zinc-700">
+                                    <span class="text-zinc-500 block">Shopify Metafields</span>
+                                    <span class="font-bold text-white">Custom Attribut-Mapping</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 bg-teal-50/90 rounded-xl border border-teal-200 text-xs text-teal-950 font-medium flex items-center gap-2">
+                        <svg class="w-4 h-4 text-teal-800 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                        <span><strong>Nutzen:</strong> Ein aufgeräumter Shop-Katalog ohne Altlasten oder doppelte Varianten.</span>
+                    </div>
+                </div>
+
+                <!-- Card 2: Theme Sections & Bundles -->
+                <div class="premium-card p-6 sm:p-8 space-y-6 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 items-start">
+                            <span class="text-xs font-mono font-bold uppercase tracking-wider text-teal-800 bg-teal-50 px-3 py-1 rounded-md border border-teal-200">Theme & Conversion</span>
+                            <span class="text-xs text-zinc-400 font-mono">Customizer & Apps</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-zinc-950">Shopify Theme Sections & Bundle Apps</h3>
+                        <p class="text-zinc-600 text-xs sm:text-sm leading-relaxed">
+                            Einrichtung verständlicher Theme-Abschnitte (FAQs, Vergleichstabellen, Trust-Badges) und Kaching Bundles Widgets.
+                        </p>
+
+                        <!-- Realistic Theme Customizer UI Mockup Box -->
+                        <div class="p-4 bg-zinc-900 text-white rounded-xl border border-zinc-800 space-y-2.5 shadow-md">
+                            <div class="flex items-center justify-between text-[11px] font-mono text-zinc-400 border-b border-zinc-800 pb-2">
+                                <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-400"></span> Theme Customizer / Sections</span>
+                                <span class="text-emerald-400 font-semibold">Live Preview</span>
+                            </div>
+                            <div class="grid grid-cols-2 gap-2 text-[10px] font-mono text-zinc-300 pt-1">
+                                <div class="p-2 bg-zinc-800/80 rounded border border-zinc-700">
+                                    <span class="text-zinc-500 block">Kaching Bundles</span>
+                                    <span class="font-bold text-emerald-400">Staffelrabatte Aktiv</span>
+                                </div>
+                                <div class="p-2 bg-zinc-800/80 rounded border border-zinc-700">
+                                    <span class="text-zinc-500 block">Sections & FAQs</span>
+                                    <span class="font-bold text-white">Vorher/Nachher Block</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 bg-teal-50/90 rounded-xl border border-teal-200 text-xs text-teal-950 font-medium flex items-center gap-2">
+                        <svg class="w-4 h-4 text-teal-800 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                        <span><strong>Nutzen:</strong> Verkaufsstarke Produktseiten mit höherem Warenkorbwert (AOV).</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABSCHNITT 3: KI & CONTENT PIPELINE (Punkt 3: Visuelles Vorher/Nachher Beispiel bei NanoBanana Pro!) -->
+    <section class="py-20 bg-white border-b border-zinc-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-zinc-200 pb-4">
+                <div>
+                    <span class="text-xs font-mono uppercase tracking-widest text-teal-800 font-semibold bg-teal-50 px-3.5 py-1 rounded-full border border-teal-200">
+                        KI & Visuals
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-zinc-950 tracking-tight mt-2">
+                        Intelligente KI-Tools im zielgerichteten Einsatz
+                    </h2>
+                </div>
+                <span class="text-xs font-mono text-zinc-400">Kein Tool-Overload, sondern klare Aufgaben</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Claude -->
+                <div class="premium-card p-6 space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-teal-100 text-teal-900 font-mono font-bold text-xs flex items-center justify-center shadow-xs">
+                            Claude
+                        </div>
+                        <h3 class="text-lg font-bold text-zinc-950">Claude</h3>
+                        <span class="text-[11px] font-mono text-teal-800 font-semibold block">Aufgabe: Copywriting & Tonalität</span>
+                        <p class="text-zinc-600 text-xs leading-relaxed">
+                            Erstellt flüssige, natürliche deutsche Vorteilstexte und hält komplexe Markenrichtlinien exakt ein.
+                        </p>
+                    </div>
+                    <div class="p-3 bg-zinc-50 rounded-lg border border-zinc-200 text-[11px] text-zinc-700 font-medium">
+                        Ergebnis: Einwandfreie deutsche Verkaufs-Texte.
+                    </div>
+                </div>
+
+                <!-- ChatGPT -->
+                <div class="premium-card p-6 space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-teal-100 text-teal-900 font-mono font-bold text-xs flex items-center justify-center shadow-xs">
+                            GPT
+                        </div>
+                        <h3 class="text-lg font-bold text-zinc-950">ChatGPT</h3>
+                        <span class="text-[11px] font-mono text-teal-800 font-semibold block">Aufgabe: Struktur & Tabellen</span>
+                        <p class="text-zinc-600 text-xs leading-relaxed">
+                            Strukturiert unübersichtliche Produktdaten in klare Vergleichstabellen, Bullet-Points und FAQ-Formate.
+                        </p>
+                    </div>
+                    <div class="p-3 bg-zinc-50 rounded-lg border border-zinc-200 text-[11px] text-zinc-700 font-medium">
+                        Ergebnis: Hohe Lesbarkeit & Übersicht.
+                    </div>
+                </div>
+
+                <!-- NanoBanana Pro mit VISUELLEM VORHER / NACHHER VERGLEICH! -->
+                <div class="premium-card p-6 space-y-4 flex flex-col justify-between border-2 border-teal-600 bg-teal-50/30">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-teal-800 text-white font-mono font-bold text-xs flex items-center justify-center shadow-xs">
+                            Nano
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-bold text-zinc-950">NanoBanana Pro</h3>
+                            <span class="text-[10px] font-bold text-teal-800 bg-teal-100 px-2 py-0.5 rounded">KI-Visuals</span>
+                        </div>
+                        <span class="text-[11px] font-mono text-teal-900 font-semibold block">Aufgabe: Produkt- & Lifestyle-Visuals</span>
+                        <p class="text-zinc-600 text-xs leading-relaxed">
+                            Generiert fotorealistische Studio- & Lifestyle-Visuals auf Basis einfacher Produkt-Freisteller.
+                        </p>
+                    </div>
+
+                    <!-- Vorher / Nachher Visuelles Vorschau Element -->
+                    <div class="p-3 bg-white rounded-xl border border-teal-200 space-y-2 shadow-xs">
+                        <span class="text-[10px] font-bold font-mono text-teal-900 uppercase tracking-wider block">Vorher ➔ Nachher Transformation:</span>
+                        
+                        <div class="grid grid-cols-2 gap-2 text-center">
+                            <!-- Vorher -->
+                            <div class="p-2 bg-zinc-100 rounded-lg border border-zinc-200">
+                                <span class="text-[9px] font-mono text-zinc-500 uppercase block">Vorher</span>
+                                <div class="w-8 h-8 mx-auto my-1 bg-zinc-200 rounded flex items-center justify-center text-[9px] font-mono text-zinc-600">📦 Freisteller</div>
+                                <span class="text-[9px] font-medium text-zinc-600 block">Weißer Grund</span>
+                            </div>
+
+                            <!-- Nachher -->
+                            <div class="p-2 bg-teal-50 rounded-lg border border-teal-300">
+                                <span class="text-[9px] font-mono text-teal-800 uppercase font-bold block">Nachher</span>
+                                <div class="w-8 h-8 mx-auto my-1 bg-emerald-800 text-white rounded flex items-center justify-center text-[9px] font-mono font-bold shadow-xs">✨ Studio</div>
+                                <span class="text-[9px] font-bold text-teal-950 block">Lifestyle Scene</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Canva AI -->
+                <div class="premium-card p-6 space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-teal-100 text-teal-900 font-mono font-bold text-xs flex items-center justify-center shadow-xs">
+                            Canva
+                        </div>
+                        <h3 class="text-lg font-bold text-zinc-950">Canva AI</h3>
+                        <span class="text-[11px] font-mono text-teal-800 font-semibold block">Aufgabe: Grafischer Feinschliff</span>
+                        <p class="text-zinc-600 text-xs leading-relaxed">
+                            Fügt Vorteilssiegel, Maß-Infografiken und Brand-Badges in die generierten Produktbilder ein.
+                        </p>
+                    </div>
+                    <div class="p-3 bg-zinc-50 rounded-lg border border-zinc-200 text-[11px] text-zinc-700 font-medium">
+                        Ergebnis: Verkaufsfertige Grafik-Assets.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABSCHNITT 4: RECHERCHE & SEO (Punkt 5: Ergänzter Hinweis "Alle Entscheidungen basieren auf Daten statt Vermutungen") -->
+    <section class="py-20 bg-zinc-50 border-b border-zinc-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-zinc-200 pb-4">
+                <div>
+                    <span class="text-xs font-mono uppercase tracking-widest text-teal-800 font-semibold bg-teal-50 px-3.5 py-1 rounded-full border border-teal-200">
+                        Marktanalyse & SEO
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-zinc-950 tracking-tight mt-2">
+                        Datenbasierte Entscheidungen statt Bauchgefühl
+                    </h2>
+                </div>
+                <span class="text-xs sm:text-sm font-semibold text-teal-900 bg-white px-3.5 py-1.5 rounded-lg border border-teal-200 shadow-xs">
+                    💡 Alle Entscheidungen basieren auf Daten statt Vermutungen.
+                </span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="premium-card p-6 space-y-3">
+                    <div class="w-9 h-9 rounded-xl bg-zinc-100 text-teal-800 flex items-center justify-center font-bold text-sm shadow-xs">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                    </div>
+                    <h3 class="text-base font-bold text-zinc-950">Google Trends</h3>
+                    <p class="text-xs text-zinc-600 leading-relaxed">
+                        Analyse von saisonalen Suchbegriffen und aktuellen Trends im DACH-Markt zur rechtzeitigen Ausrichtung von Produktseiten.
+                    </p>
+                </div>
+
+                <div class="premium-card p-6 space-y-3">
+                    <div class="w-9 h-9 rounded-xl bg-zinc-100 text-teal-800 flex items-center justify-center font-bold text-sm shadow-xs">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"/></svg>
+                    </div>
+                    <h3 class="text-base font-bold text-zinc-950">Google Keyword Planner</h3>
+                    <p class="text-xs text-zinc-600 leading-relaxed">
+                        Ermittlung des exakten monatlichen Suchvolumens für Long-Tail-Keywords, die in Überschriften und Meta-Daten integriert werden.
+                    </p>
+                </div>
+
+                <div class="premium-card p-6 space-y-3">
+                    <div class="w-9 h-9 rounded-xl bg-zinc-100 text-teal-800 flex items-center justify-center font-bold text-sm shadow-xs">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                    </div>
+                    <h3 class="text-base font-bold text-zinc-950">Google Suche</h3>
+                    <p class="text-xs text-zinc-600 leading-relaxed">
+                        Wettbewerbsanalyse der bestehenden Top-Rankings auf Seite 1 zur gezielten Identifikation von inhaltlichen Lücken.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABSCHNITT 5: ORGANISATION & ZUSAMMENARBEIT (Punkt 6: Kompaktere Texte) -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-zinc-200 pb-4">
+                <div>
+                    <span class="text-xs font-mono uppercase tracking-widest text-teal-800 font-semibold bg-teal-50 px-3.5 py-1 rounded-full border border-teal-200">
+                        Verlässliche Abläufe
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-zinc-950 tracking-tight mt-2">
+                        Organisation & Kommunikation
+                    </h2>
+                </div>
+                <span class="text-xs font-mono text-zinc-400">Kurze Wege</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="premium-card p-6 space-y-3 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="w-9 h-9 rounded-xl bg-zinc-100 text-teal-800 flex items-center justify-center font-bold text-sm shadow-xs">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+                        </div>
+                        <h3 class="text-base font-bold text-zinc-950">Slack</h3>
+                        <p class="text-xs text-zinc-600 leading-relaxed">
+                            Schnelle Tages-Abstimmung mit Händlern ohne lange Funkstille oder Bürokratie.
+                        </p>
+                    </div>
+                    <span class="text-[11px] font-semibold text-teal-800">Direkter Austausch</span>
+                </div>
+
+                <div class="premium-card p-6 space-y-3 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="w-9 h-9 rounded-xl bg-zinc-100 text-teal-800 flex items-center justify-center font-bold text-sm shadow-xs">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                        </div>
+                        <h3 class="text-base font-bold text-zinc-950">Notion</h3>
+                        <p class="text-xs text-zinc-600 leading-relaxed">
+                            Strukturiertes Board für den aktuellen Bearbeitungsstand aller Produktseiten.
+                        </p>
+                    </div>
+                    <span class="text-[11px] font-semibold text-teal-800">100% Transparenz</span>
+                </div>
+
+                <div class="premium-card p-6 space-y-3 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="w-9 h-9 rounded-xl bg-zinc-100 text-teal-800 flex items-center justify-center font-bold text-sm shadow-xs">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                        </div>
+                        <h3 class="text-base font-bold text-zinc-950">Google Sheets & Excel</h3>
+                        <p class="text-xs text-zinc-600 leading-relaxed">
+                            Kompaktes Datenmanagement für Bulk-Imports, Varianten und Metafields.
+                        </p>
+                    </div>
+                    <span class="text-[11px] font-semibold text-teal-800">Saubere Daten</span>
+                </div>
+
+            </div>
+
+            <!-- Punkt 7: Eleganter Abschluss-Block vor dem Footer -->
+            <div class="pt-8">
+                <div class="p-8 rounded-2xl bg-gradient-to-b from-teal-50/80 via-zinc-50/50 to-white border border-teal-200/80 text-center max-w-3xl mx-auto shadow-xs space-y-3">
+                    <span class="inline-flex items-center gap-1.5 text-xs font-mono font-bold text-teal-800 uppercase tracking-widest bg-white px-3.5 py-1 rounded-full border border-teal-200/90 shadow-xs">
+                        <span>✦ Praxis & Erfahrung</span>
+                    </span>
+                    <p class="text-base sm:text-lg text-zinc-900 font-semibold leading-relaxed pt-1">
+                        Technologie ersetzt keine Erfahrung. Die richtigen Werkzeuge entfalten ihren Wert erst durch einen klaren Workflow und saubere Shopify-Umsetzung.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-zinc-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-zinc-950 text-white font-mono font-bold flex items-center justify-center text-xs">
+                    MB
+                </div>
+                <div class="space-y-0.5">
+                    <span class="font-bold text-zinc-950 text-base tracking-tight">MAX BELON</span>
+                    <span class="block text-xs text-zinc-500">Shopify Shop Manager & E-Commerce Specialist</span>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-6 text-sm text-zinc-600">
+                <a href="index.html" class="hover:text-zinc-950">Start</a>
+                <a href="leistungen.html" class="hover:text-zinc-950">Leistungen</a>
+                <a href="arbeitsweise.html" class="hover:text-zinc-950">Arbeitsweise</a>
+                <a href="projekte.html" class="hover:text-zinc-950">Case Studies</a>
+                <a href="tools.html" class="hover:text-zinc-950 font-semibold text-zinc-950">Tools</a>
+                <a href="mein-ansatz.html" class="hover:text-zinc-950">Mein Ansatz</a>
+            </div>
+
+            <div class="text-xs text-zinc-400 text-center md:text-right">
+                © 2026 Max Belon. Alle Rechte vorbehalten.<br>
+                <span>Vertraulichkeit & Datenschutz gewahrt.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
