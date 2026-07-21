@@ -1,1 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-tertiary: #f1f3f5;
+  --text-main: #09090b;
+  --text-muted: #52525b;
+  --text-subtle: #a1a1aa;
+  --border-light: #e4e4e7;
+  --border-hover: #cbd5e1;
+  --accent-emerald: #0f766e;
+  --accent-emerald-light: #f0fdf4;
+  --accent-emerald-border: #a7f3d0;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+  --shadow-card: 0 4px 20px -2px rgba(0, 0, 0, 0.04);
+  --shadow-card-hover: 0 24px 48px -8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: 'Geist', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Linear/Vercel/Stripe Micro-Animations & Haptics */
+.transition-smooth {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Cards System */
+.premium-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.premium-card:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-2.5px);
+}
+
+/* Linear-Style Case Study Showcase Card */
+.case-study-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 20px;
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.case-study-card:hover {
+  border-color: #94a3b8;
+  box-shadow: 0 28px 56px -10px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+.case-study-card:hover .card-banner-bg {
+  transform: scale(1.03);
+}
+
+.card-banner-bg {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Subtler Status Pill */
+.status-pill-subtle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 14px;
+  background-color: #f4f4f5;
+  border: 1px solid #e4e4e7;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #52525b;
+}
+
+.status-dot-subtle {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #10b981;
+}
+
+/* Accordion Custom Styling */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 900px;
+}
+
+.accordion-item.active .chevron-icon {
+  transform: rotate(180deg);
+}
+
+/* Consistent Upwork CTA Button (Linear / Vercel Haptics) */
+.upwork-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--text-main);
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.upwork-btn:hover {
+  background-color: #18181b;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+}
+
+.upwork-btn:active {
+  transform: translateY(0);
+}
+
+/* Elegant Active Navigation Link Styling */
+.nav-link {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 7px 12px;
+  border-radius: 10px;
+  white-space: nowrap;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-link:hover {
+  color: var(--text-main);
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.nav-link.active {
+  color: #ffffff;
+  font-weight: 600;
+  background-color: var(--text-main);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* Workflow Interactive Node Card with Connecting Dot */
+.workflow-step-card {
+  border: 1px solid var(--border-light);
+  background: var(--bg-secondary);
+  border-radius: 14px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  position: relative;
+}
+
+.workflow-step-card:hover {
+  border-color: var(--accent-emerald);
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(15, 118, 110, 0.14);
+  transform: translateY(-3.5px);
+}
+
+.workflow-step-card:hover .step-icon {
+  background-color: #ccfbf1;
+  color: #0f766e;
+  transform: scale(1.1);
+}
+
+.step-icon {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Ultra Realistic Live Shop Shadow & Glass Depth */
+.shop-preview-shadow {
+  box-shadow: 0 32px 70px -12px rgba(0, 0, 0, 0.18), 0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
+/* Modal backdrop */
+.modal-backdrop {
+  background-color: rgba(9, 9, 11, 0.7);
+  backdrop-filter: blur(8px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f4f4f5;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4d4d8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1aa;
+}
