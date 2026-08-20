@@ -199,3 +199,30 @@ function loadCaseStudyData(id) {
   const beitragContainer = document.getElementById('modal-beitrag');
   beitragContainer.innerHTML = data.beitrag.map(b => `<li class="flex items-start gap-2 text-zinc-600 text-sm"><span class="text-emerald-700 font-bold">✓</span> ${b}</li>`).join('');
 }
+
+/* ---- PDP Mockup: Thumbnail-Galerie ---- */
+document.addEventListener('DOMContentLoaded', function () {
+  var mainImg = document.getElementById('pdp-main-img');
+  var thumbs = document.querySelectorAll('.pdp-thumb');
+  if (!mainImg || !thumbs.length) return;
+
+  thumbs.forEach(function (thumb) {
+    thumb.addEventListener('click', function () {
+      var src = thumb.getAttribute('data-img');
+      if (!src) return;
+
+      mainImg.style.opacity = '0';
+      setTimeout(function () {
+        mainImg.src = src;
+        mainImg.style.opacity = '1';
+      }, 150);
+
+      thumbs.forEach(function (t) {
+        t.classList.remove('border-2', 'border-teal-600');
+        t.classList.add('border', 'border-zinc-200');
+      });
+      thumb.classList.remove('border', 'border-zinc-200');
+      thumb.classList.add('border-2', 'border-teal-600');
+    });
+  });
+});
