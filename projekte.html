@@ -9,6 +9,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
+<link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="favicon/android-chrome-512x512.png">
 </head>
 <body class="bg-white text-zinc-950 antialiased selection:bg-teal-100 selection:text-teal-900">
 
@@ -36,10 +42,13 @@
                 <a href="mein-ansatz.html" class="nav-link">Mein Ansatz</a>
             </nav>
 
-            <!-- Consistent Upwork CTA Button -->
-            <div class="hidden xl:flex items-center gap-4 shrink-0">
-                <a href="https://www.upwork.com/freelancers/~012da00905f199f0d6?mp_source=share" target="_blank" rel="noopener noreferrer" class="upwork-btn">
-                    <span>Projekt auf Upwork besprechen</span>
+            <!-- Header CTA Buttons -->
+            <div class="hidden xl:flex items-center gap-3 shrink-0">
+                <a href="https://calendly.com/maxbelon/30min" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-zinc-300 text-zinc-700 font-semibold text-sm hover:bg-zinc-50 hover:border-zinc-400 transition-colors">
+                    <span>Termin buchen</span>
+                </a>
+                <a href="index.html#kontakt" class="direct-btn">
+                    <span>Nachricht schreiben</span>
                     <svg class="w-4 h-4 opacity-75" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                 </a>
             </div>
@@ -57,9 +66,12 @@
             <a href="projekte.html" class="block nav-link active">Case Studies</a>
             <a href="tools.html" class="block nav-link">Tools</a>
             <a href="mein-ansatz.html" class="block nav-link">Mein Ansatz</a>
-            <div class="pt-2">
-                <a href="https://www.upwork.com/freelancers/~012da00905f199f0d6?mp_source=share" target="_blank" rel="noopener noreferrer" class="upwork-btn w-full text-center justify-center">
-                    Projekt auf Upwork besprechen ↗
+            <div class="pt-2 space-y-2">
+                <a href="index.html#kontakt" class="direct-btn w-full text-center justify-center">
+                    Nachricht schreiben ↗
+                </a>
+                <a href="https://calendly.com/maxbelon/30min" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl border border-zinc-300 text-zinc-700 font-semibold text-sm hover:bg-zinc-50 hover:border-zinc-400 transition-colors">
+                    Termin buchen
                 </a>
             </div>
         </div>
@@ -178,7 +190,7 @@
                             <span class="text-teal-800 font-bold font-mono text-[11px] uppercase tracking-wider shrink-0">🏆 Ergebnis:</span>
                             <span class="text-xs sm:text-sm font-semibold text-zinc-950">Deutliche Steigerung der Verweildauer auf der Produktseite, professionelles Markenbild & reibungslose Kauferfahrung</span>
                         </div>
-                        <button class="upwork-btn text-xs py-2.5 px-5 shadow-xs shrink-0" data-open-case-study="pdp-redesign">
+                        <button class="direct-btn text-xs py-2.5 px-5 shadow-xs shrink-0" data-open-case-study="pdp-redesign">
                             Case Study ansehen →
                         </button>
                     </div>
@@ -242,7 +254,7 @@
                             <span class="text-teal-800 font-bold font-mono text-[11px] uppercase tracking-wider shrink-0">🏆 Ergebnis:</span>
                             <span class="text-xs sm:text-sm font-semibold text-zinc-950">Sauberer, skalierbarer Shop-Katalog ohne Altlasten & schnelle Backend-Pflege</span>
                         </div>
-                        <button class="upwork-btn text-xs py-2.5 px-5 shadow-xs shrink-0" data-open-case-study="shop-management">
+                        <button class="direct-btn text-xs py-2.5 px-5 shadow-xs shrink-0" data-open-case-study="shop-management">
                             Case Study ansehen →
                         </button>
                     </div>
@@ -306,7 +318,7 @@
                             <span class="text-teal-800 font-bold font-mono text-[11px] uppercase tracking-wider shrink-0">🏆 Ergebnis:</span>
                             <span class="text-xs sm:text-sm font-semibold text-zinc-950">Hochauflösende Lifestyle-Visuals & fertige Galerie-Assets in unter 48 Stunden</span>
                         </div>
-                        <button class="upwork-btn text-xs py-2.5 px-5 shadow-xs shrink-0" data-open-case-study="ai-visuals">
+                        <button class="direct-btn text-xs py-2.5 px-5 shadow-xs shrink-0" data-open-case-study="ai-visuals">
                             Case Study ansehen →
                         </button>
                     </div>
